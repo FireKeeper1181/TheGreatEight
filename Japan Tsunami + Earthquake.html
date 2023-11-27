@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Tsunami + Eathquake</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<section id="header">
+    <a href="index.html"><img src="Title.png" style="max-width: 200px;"></a>
+
+    <div>
+        <ul id="navbar">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="Members.html">Members</a></li>
+            <a href="#" id="close"><img src="img/close.png" style="max-width: 25px;"></a>
+        </ul>
+    </div>
+
+    <div id="mobile">
+        <img id="bar" src="hmburgericon.png" style="max-width: 55px;">
+    </div>
+
+</section>
+
+
+
+<body>
+
+    <section class="about-event">
+        <h1>Japan Tsunami + Eathquake</h1>
+
+
+        <section id="slide-section">
+            <!-- Image slider start-->
+            <div class="slider">
+                <div class="slides">
+                    <!--radio button starts-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <!--slide images-->
+                    <div class="slide first">
+                        <img src="Japan Tsunami + Eathquake/jp 1.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="Japan Tsunami + Eathquake/jp 2.webp">
+                    </div>
+                    <div class="slide">
+                        <img src="Japan Tsunami + Eathquake/jp 3.png">
+                    </div>
+                    <div class="slide">
+                        <img src="Japan Tsunami + Eathquake/jp 4.webp">
+                    </div>
+
+                    <!--Auto Slide-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+                <!--Manual Slide-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+            <!-- Image slider end-->
+        </section>
+
+        <section class="about-event">
+            <h1>Japan Tsunami + Earthquake</h1>
+
+            <div class="event-details">
+                <p><strong>Devastating Event:</strong> The Japan Tsunami and Earthquake occurred on [Date], leading to
+                    widespread destruction and loss of life.</p>
+
+                <p><strong>Impact:</strong> The event resulted in massive destruction along coastal areas, triggering a
+                    powerful tsunami that caused extensive damage and loss of life. The earthquake also caused
+                    structural damage to buildings and infrastructure.</p>
+
+                <p><strong>Aftermath:</strong> Japan faced a long and challenging recovery process, involving
+                    reconstruction efforts, assistance from the international community, and initiatives to enhance
+                    preparedness for future natural disasters.</p>
+
+                <h2>Key Details:</h2>
+                <ul>
+                    <li>1. The 1923 Great Kantō earthquake, which had a magnitude of 7.9 and killed over 140,000 people.
+                    </li>
+                    <li>2. Great East Japan Earthquake (2011): One of the most devastating events in recent history was
+                        the Great East Japan Earthquake that occurred on March 11, 2011. It had a magnitude of 9.0-9.1,
+                        making it the most powerful earthquake ever recorded in Japan and the fourth most powerful
+                        earthquake in the world since modern record-keeping began in 1900. The earthquake triggered a
+                        massive tsunami with waves reaching up to 40 meters (130 feet) in some areas. The tsunami led to
+                        the Fukushima Daiichi nuclear disaster when the waves inundated the Fukushima Daiichi Nuclear
+                        Power Plant. This disaster had significant social, economic, and environmental consequences for
+                        Japan</li>
+                    <li>3. Kumamoto Earthquakes (2016): In April 2016, a series of earthquakes struck the Kumamoto
+                        region in southwestern Japan. The mainshock, with a magnitude of 7.0, caused widespread damage
+                        to buildings and infrastructure. A number of aftershocks followed, exacerbating the destruction.
+                        The earthquakes affected thousands of people, leading to evacuations and disrupting daily life
+                        in the affected areas.</li>
+                    <li>4. Tohoku-Oki Earthquake (2013): In December 2012, a powerful undersea earthquake with a
+                        magnitude of 7.3 occurred off the coast of Tohoku. Although it did not cause a tsunami, it
+                        served as a reminder of the ongoing seismic activity in the region and the potential for future
+                        events.Japan has a well-developed early warning system for earthquakes and tsunamis, and strict
+                        building codes to minimize the damage caused by seismic events. Despite these measures, the
+                        country remains vigilant and continues to invest in research and infrastructure to mitigate the
+                        impact of earthquakes and tsunamis. The events mentioned are just a few examples, and Japan
+                        regularly experiences smaller earthquakes due to its tectonic setting.</li>
+
+                </ul>
+
+                <p><strong>Resilience and Recovery:</strong> Despite the immense challenges, the people of Japan
+                    demonstrated remarkable resilience in the face of adversity. The recovery efforts showcased the
+                    strength of community and international support.</p>
+            </div>
+        </section>
+    </section>
+
+
+    <script>
+        // Auto Slideshow
+        var counter = 3;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+
+</body>
+
+
+</body>
+
+</html>

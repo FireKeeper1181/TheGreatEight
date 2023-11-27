@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Great Flood</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<section id="header">
+    <a href="index.html"><img src="Title.png" style="max-width: 200px;"></a>
+
+    <div>
+        <ul id="navbar">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="Members.html">Members</a></li>
+            <a href="#" id="close"><img src="img/close.png" style="max-width: 25px;"></a>
+        </ul>
+    </div>
+
+    <div id="mobile">
+        <img id="bar" src="hmburgericon.png" style="max-width: 55px;">
+    </div>
+
+</section>
+
+
+
+<body>
+
+    <section class="about-event">
+        <h1>The Great Flood</h1>
+
+
+        <section id="slide-section">
+            <!-- Image slider start-->
+            <div class="slider">
+                <div class="slides">
+                    <!--radio button starts-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <!--slide images-->
+                    <div class="slide first">
+                        <img src="The Great Flood/flood 2.png">
+                    </div>
+                    <div class="slide">
+                        <img src="The Great Flood/flood 3.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="The Great Flood/flood 4.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="The Great Flood/NqeaQsAQMPCr2viN3M6uGk.jpg">
+                    </div>
+
+                    <!--Auto Slide-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+                <!--Manual Slide-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+            <!-- Image slider end-->
+        </section>
+
+        <div class="event-details">
+            <p><strong>Global Mythologies:</strong> The concept of a great flood is not limited to one culture or
+                religion. Similar flood narratives appear in the Epic of Gilgamesh, the Bible (Noah's Ark), the Hindu
+                texts, and others, showcasing its widespread cultural significance.</p>
+
+            <p><strong>Geological Evidence:</strong> Some scientists speculate that regional floods, such as the
+                flooding of the Black Sea around 5600 BCE, could have inspired or contributed to the various flood myths
+                across different cultures.</p>
+
+            <p><strong>Archaeological Discoveries:</strong> Researchers have found evidence of ancient civilizations
+                that suddenly disappeared, such as the Ubaid civilization in Mesopotamia, leading to theories that
+                catastrophic floods may have played a role.</p>
+
+            <p><strong>Cultural Legacy:</strong> The theme of a great flood has inspired countless works of literature,
+                art, and film, emphasizing its enduring impact on human storytelling and cultural imagination.</p>
+        </div>
+    </section>
+
+
+    <script>
+        // Auto Slideshow
+        var counter = 3;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+
+</body>
+
+</html>

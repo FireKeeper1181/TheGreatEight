@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hurricane Katrina</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<section id="header">
+    <a href="index.html"><img src="Title.png" style="max-width: 200px;"></a>
+
+    <div>
+        <ul id="navbar">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="Members.html">Members</a></li>
+            <a href="#" id="close"><img src="img/close.png" style="max-width: 25px;"></a>
+        </ul>
+    </div>
+
+    <div id="mobile">
+        <img id="bar" src="hmburgericon.png" style="max-width: 55px;">
+    </div>
+
+</section>
+
+
+
+<body>
+
+    <section class="about-event">
+        <h1>Hurricane Katrina</h1>
+
+
+        <section id="slide-section">
+            <!-- Image slider start-->
+            <div class="slider">
+                <div class="slides">
+                    <!--radio button starts-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <!--slide images-->
+                    <div class="slide first">
+                        <img src="Hurricane Katrina/hurr 1.jpeg">
+                    </div>
+                    <div class="slide">
+                        <img src="Hurricane Katrina/hurr 2.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="Hurricane Katrina/hurr 3.jpeg">
+                    </div>
+                    <div class="slide">
+                        <img src="Hurricane Katrina/hurr 4.webp">
+                    </div>
+
+                    <!--Auto Slide-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+                <!--Manual Slide-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+            <!-- Image slider end-->
+        </section>
+
+        <section class="about-event">
+            <h1>Soviet Famine - Holodomor</h1>
+
+            <div class="event-details">
+                <h2>Introduction:</h2>
+                <p>
+                    The Soviet Famine, often referred to as the Holodomor, was a devastating period of famine that
+                    occurred
+                    in the Soviet Union, particularly affecting Ukraine, Kazakhstan, Moldova, and parts of Russia
+                    between 1932
+                    and 1933. This catastrophic event resulted in the deaths of millions of people due to starvation,
+                    malnutrition, and related diseases.
+                </p>
+
+                <h2>Causes:</h2>
+                <p>
+                    The causes of the Soviet Famine were primarily man-made, resulting from the policies implemented by
+                    the Soviet government, specifically under the leadership of Joseph Stalin. Stalin's collectivization
+                    and agricultural policies aimed to forcibly consolidate small, individual farms into large,
+                    state-controlled collective farms. This process aimed to increase agricultural productivity and feed
+                    industrial workers in rapidly growing urban areas.
+                </p>
+
+                <h2>Resistance and Violent Confiscation:</h2>
+                <p>
+                    However, the implementation of collectivization led to widespread resistance among the farming
+                    communities. Peasants resisted giving up their land and livestock, which resulted in violent
+                    confiscation by Soviet authorities. In response to this resistance, Stalin's regime initiated a
+                    series
+                    of harsh measures to enforce collectivization, including confiscation of grain and other foodstuffs
+                    from the peasantry.
+                </p>
+
+                <h2>Quotas and Labeling of "Kulaks":</h2>
+                <p>
+                    The Soviet government imposed impossibly high quotas on grain requisitions, leaving little to no
+                    food
+                    for the farmers and their families. Peasants who were deemed resistant to collectivization or unable
+                    to meet the grain quotas were labelled as "kulaks" (wealthy peasants) and were either executed,
+                    deported, or left to starve. This deliberate policy of seizing agricultural produce and preventing
+                    its
+                    distribution to affected regions exacerbated the famine.
+                </p>
+
+                <h2>Denial and Censorship:</h2>
+                <p>
+                    Millions of people died because of starvation and related illnesses during the Soviet Famine.
+                    However,
+                    the Soviet government denied the existence of the famine, censored information, and restricted
+                    access
+                    to affected areas. Foreign journalists and aid organizations were barred from entering the affected
+                    regions, and the Soviet authorities actively suppressed any information about the famine both
+                    domestically and internationally.
+                </p>
+
+                <h2>Controversies and Ongoing Debates:</h2>
+                <p>
+                    The Soviet Famine remains a contentious and sensitive topic, with ongoing debates about the exact
+                    number of casualties and the extent to which it was deliberately engineered as a tool of political
+                    repression. While estimates vary, it is widely acknowledged as one of the most tragic and
+                    devastating
+                    man-made disasters of the 20th century, with a profound and lasting impact on the affected regions
+                    and
+                    their populations.
+                </p>
+            </div>
+        </section>
+    </section>
+
+
+    <script>
+        // Auto Slideshow
+        var counter = 3;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+
+</body>
+
+
+</body>
+
+</html>

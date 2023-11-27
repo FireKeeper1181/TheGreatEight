@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chernobyl</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<section id="header">
+    <a href="index.html"><img src="Title.png" style="max-width: 200px;"></a>
+
+    <div>
+        <ul id="navbar">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="Members.html">Members</a></li>
+            <a href="#" id="close"><img src="img/close.png" style="max-width: 25px;"></a>
+        </ul>
+    </div>
+
+    <div id="mobile">
+        <img id="bar" src="hmburgericon.png" style="max-width: 55px;">
+    </div>
+
+</section>
+
+
+
+<body>
+
+    <section class="about-event">
+        <h1>Chernobyl</h1>
+
+
+        <section id="slide-section">
+            <!-- Image slider start-->
+            <div class="slider">
+                <div class="slides">
+                    <!--radio button starts-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <!--slide images-->
+                    <div class="slide first">
+                        <img src="Soviet Famine/sov 1.png">
+                    </div>
+                    <div class="slide">
+                        <img src="Soviet Famine/sov 2.png">
+                    </div>
+                    <div class="slide">
+                        <img src="Soviet Famine/sov 3.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="Soviet Famine/sov 4.webp">
+                    </div>
+
+                    <!--Auto Slide-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+                <!--Manual Slide-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+            <!-- Image slider end-->
+        </section>
+
+        <section class="about-event">
+            <h1>Hurricane Katrina</h1>
+
+            <div class="event-details">
+                <h2>Overview:</h2>
+                <p>
+                    Hurricane Katrina was one of the most catastrophic and destructive hurricanes in the history of the
+                    United States. It struck the Gulf Coast on August 29, 2005, causing widespread devastation in
+                    several
+                    states, particularly Louisiana, Mississippi, and Alabama.
+                </p>
+
+                <h2>Formation and Landfall:</h2>
+                <p>
+                    Katrina started as a tropical depression over the Bahamas and gained strength rapidly as it moved
+                    towards the Gulf of Mexico. By the time it made landfall, it had intensified into a Category 3
+                    hurricane with sustained winds of around 125 mph (200 km/h).
+                </p>
+
+                <h2>Impact on New Orleans:</h2>
+                <p>
+                    The city of New Orleans bore the brunt of Katrina's impact. The hurricane caused multiple levee
+                    breaches in New Orleans, leading to catastrophic flooding in around 80% of the city. The failure of
+                    the
+                    levee system resulted in massive inundation, leaving thousands of residents stranded on rooftops or
+                    seeking refuge in overcrowded shelters.
+                </p>
+
+                <h2>Aftermath and Humanitarian Crises:</h2>
+                <p>
+                    The aftermath of Hurricane Katrina was marked by a series of significant humanitarian crises.
+                    Thousands of people were left homeless, infrastructure was severely damaged, and communication
+                    systems were disrupted. The response from federal, state, and local authorities was widely
+                    criticized
+                    for being slow and inadequate.
+                </p>
+
+                <h2>Death Toll and Impact:</h2>
+                <p>
+                    The total death toll attributed to Hurricane Katrina exceeded 1,800 people, making it one of the
+                    deadliest natural disasters in U.S. history. Many victims drowned in the floodwaters, while others
+                    died due to lack of medical care, exposure, or other related causes in the storm's aftermath.
+                </p>
+
+                <h2>Environmental and Economic Impact:</h2>
+                <p>
+                    The environmental and economic impact of Katrina was staggering. Homes and businesses were
+                    destroyed,
+                    the coastal ecosystem was significantly damaged, and the cost of recovery and rebuilding amounted to
+                    billions of dollars.
+                </p>
+
+                <h2>Lessons Learned and Ongoing Efforts:</h2>
+                <p>
+                    In the wake of Katrina, there were extensive discussions and debates about disaster preparedness,
+                    emergency response, and the role of government at various levels in handling such large-scale
+                    natural
+                    disasters. Efforts to rebuild and revitalize affected areas have been ongoing for years, with a
+                    focus
+                    on improving infrastructure, enhancing emergency preparedness, and addressing the long-term economic
+                    and
+                    social impacts left by Hurricane Katrina.
+                </p>
+            </div>
+        </section>
+    </section>
+
+
+    <script>
+        // Auto Slideshow
+        var counter = 3;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+
+</body>
+
+
+</body>
+
+</html>

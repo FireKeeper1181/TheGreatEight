@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chernobyl</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<section id="header">
+    <a href="index.html"><img src="Title.png" style="max-width: 200px;"></a>
+
+    <div>
+        <ul id="navbar">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="Members.html">Members</a></li>
+            <a href="#" id="close"><img src="img/close.png" style="max-width: 25px;"></a>
+        </ul>
+    </div>
+
+    <div id="mobile">
+        <img id="bar" src="hmburgericon.png" style="max-width: 55px;">
+    </div>
+
+</section>
+
+
+
+<body>
+
+    <section class="about-event">
+        <h1>Chernobyl</h1>
+
+
+        <section id="slide-section">
+            <!-- Image slider start-->
+            <div class="slider">
+                <div class="slides">
+                    <!--radio button starts-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <!--slide images-->
+                    <div class="slide first">
+                        <img src="Chernobyl/Cher 1.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="Chernobyl/cher 2.png">
+                    </div>
+                    <div class="slide">
+                        <img src="Chernobyl/cher 3.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="Chernobyl/cher 4.png">
+                    </div>
+
+                    <!--Auto Slide-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+                <!--Manual Slide-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+            <!-- Image slider end-->
+        </section>
+
+        <div class="event-details">
+            <p><strong>Soviet Secrecy and Denial:</strong> The Soviet government initially downplayed the severity of
+                the Chernobyl disaster, delaying the evacuation of nearby towns and causing a delay in the international
+                response.</p>
+
+            <p><strong>Exclusion Zone Wildlife:</strong> Despite the high radiation levels, the Chernobyl Exclusion Zone
+                has become an unintended wildlife sanctuary. Animals like wolves, boars, and deer have thrived in the
+                absence of human activity.</p>
+
+            <p><strong>Pripyat Ghost Town:</strong> The city of Pripyat, once a bustling community for Chernobyl
+                workers, now stands as an eerie ghost town frozen in time, with decaying buildings and abandoned
+                amusement parks.</p>
+
+            <p><strong>New Safe Confinement:</strong> In 2016, a massive steel structure known as the New Safe
+                Confinement was placed over the original sarcophagus, providing a more secure containment for the
+                radioactive materials and preventing further environmental contamination.</p>
+        </div>
+    </section>
+
+
+    <script>
+        // Auto Slideshow
+        var counter = 3;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+
+</body>
+
+
+</body>
+
+</html>

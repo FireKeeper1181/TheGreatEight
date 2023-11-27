@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MH370</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<section id="header">
+    <a href="index.html"><img src="Title.png" style="max-width: 200px;"></a>
+
+    <div>
+        <ul id="navbar">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="Members.html">Members</a></li>
+            <a href="#" id="close"><img src="img/close.png" style="max-width: 25px;"></a>
+        </ul>
+    </div>
+
+    <div id="mobile">
+        <img id="bar" src="hmburgericon.png" style="max-width: 55px;">
+    </div>
+
+</section>
+
+
+
+<body>
+
+    <section class="about-event">
+        <h1>MH370</h1>
+
+
+        <section id="slide-section">
+            <!-- Image slider start-->
+            <div class="slider">
+                <div class="slides">
+                    <!--radio button starts-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+    
+                    <!--slide images-->
+                    <div class="slide first">
+                        <img src="MH370/mh 1.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="MH370/mh 2.jpeg">
+                    </div>
+                    <div class="slide">
+                        <img src="MH370/mh 3.webp">
+                    </div>
+                    <div class="slide">
+                        <img src="MH370/mh 4.webp">
+                    </div>
+    
+                    <!--Auto Slide-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+                <!--Manual Slide-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+            <!-- Image slider end-->
+        </section>
+
+        <section class="about-event">
+            <h1>Malaysia Airlines Flight 370 (MH370)</h1>
+    
+            <div class="event-details">
+                <p><strong>Vanishing Mystery:</strong> Malaysia Airlines Flight 370 (MH370/MAS370) was a Boeing 777-200ER that disappeared on March 8, 2014, en route from Beijing, China, to Kuala Lumpur, Malaysia. The aircraft vanished with 12 crew members and 227 passengers on board.</p>
+    
+                <p><strong>Last Known Location:</strong> The aircraft's last communication with air traffic control occurred over the South China Sea. It later deviated from its planned course, crossed the Indian Ocean, and its final position was recorded by an Inmarsat satellite.</p>
+    
+                <p><strong>Unsolved Mystery:</strong> Despite extensive search efforts covering vast areas of the southern Indian Ocean, no trace of MH370 has been found. The disappearance remains one of the greatest aviation mysteries in history.</p>
+    
+                <h2>Timeline of Events:</h2>
+                <ul>
+                    <li>00:35 AM MYT (UTC+8:00): MH370 departs from KLIA.</li>
+                    <li>01:01 AM MYT (UTC+8:00): MH370 reaches its cruising altitude of 35,000 feet.</li>
+                    <li>01:07 AM MYT (UTC+8:00): The ACARS system on MH370 stops transmitting data.</li>
+                    <li>01:19 AM MYT (UTC+8:00): The last voice communication from MH370 occurs.</li>
+                    <li>01:21 AM MYT (UTC+8:00): The transponder on MH370 is turned off.</li>
+                    <li>01:30 AM MYT (UTC+8:00): MH370 deviates from its planned course.</li>
+                    <li>08:15 AM MYT (UTC+8:00): MH370's final position is recorded by an Inmarsat satellite.</li>
+                    <li>March 8, 2014, afternoon: Search and rescue operations begin.</li>
+                    <li>March 24, 2014: The Joint Agency Coordination Group (JACC) is established to coordinate the search for MH370.</li>
+                    <li>July 29, 2015: The JACC announces that the search area for MH370 has been expanded.</li>
+                    <li>January 29, 2017: The JACC announces that the search for MH370 has been suspended.</li>
+                </ul>
+    
+                <p><strong>Theories and Next of Kin:</strong> Theories abound about the fate of MH370, with the most credible suggesting the plane is in the southern Indian Ocean. However, the mystery persists, and next of kin are still without all the answers.</p>
+    
+                <p><strong>Search Attempts:</strong> Numerous search attempts involving 26 countries covered over 150,000 square kilometers of the southern Indian Ocean. Despite these efforts, no debris from MH370 has been found, leaving the fate of the aircraft unknown.</p>
+            </div>
+        </section>
+    </section>
+
+
+    <script>
+        // Auto Slideshow
+        var counter = 3;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+
+</body>
+
+
+</body>
+
+</html>

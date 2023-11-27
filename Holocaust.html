@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holocaust</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<section id="header">
+    <a href="index.html"><img src="Title.png" style="max-width: 200px;"></a>
+
+    <div>
+        <ul id="navbar">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="Members.html">Members</a></li>
+            <a href="#" id="close"><img src="img/close.png" style="max-width: 25px;"></a>
+        </ul>
+    </div>
+
+    <div id="mobile">
+        <img id="bar" src="hmburgericon.png" style="max-width: 55px;">
+    </div>
+
+</section>
+
+
+
+<body>
+
+    <section class="about-event">
+        <h1>Holocaust</h1>
+
+
+        <section id="slide-section">
+            <!-- Image slider start-->
+            <div class="slider">
+                <div class="slides">
+                    <!--radio button starts-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <!--slide images-->
+                    <div class="slide first">
+                        <img src="Holocaust/Holo 1.png">
+                    </div>
+                    <div class="slide">
+                        <img src="Holocaust/holo 2.png">
+                    </div>
+                    <div class="slide">
+                        <img src="Holocaust/holo 3.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="Holocaust/holo 4.jpg">
+                    </div>
+
+                    <!--Auto Slide-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+                <!--Manual Slide-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+            <!-- Image slider end-->
+        </section>
+
+        <div class="event-details">
+            <p><strong>Nazi Genocide:</strong> The Holocaust was the systematic, state-sponsored persecution and
+                extermination of six million Jews by the Nazi regime and its collaborators during World War II
+                (1939-1945).</p>
+
+            <p><strong>Concentration and Death Camps:</strong> The Nazis established concentration camps where millions
+                of innocent people, including Jews, Romani people, disabled individuals, and political dissidents,
+                suffered forced labor, starvation, and mass killings.</p>
+
+            <p><strong>Final Solution:</strong> The "Final Solution" was the Nazis' plan to systematically annihilate
+                the entire Jewish population of Europe. It involved mass shootings, gas chambers, and other forms of
+                mass murder.</p>
+
+            <p><strong>Aftermath and Remembrance:</strong> The Holocaust is a dark chapter in human history, and its
+                aftermath led to the establishment of international human rights conventions. Holocaust remembrance and
+                education aim to prevent such atrocities from happening again.</p>
+        </div>
+    </section>
+
+
+    <script>
+        // Auto Slideshow
+        var counter = 3;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+
+</body>
+
+
+</body>
+
+</html>
